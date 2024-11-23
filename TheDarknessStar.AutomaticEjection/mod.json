@@ -1,0 +1,15 @@
+{
+	"Name": "TheDarknessStar.AutomaticEjection",
+	"Description": "After installing this module, Titan will automatically eject during the score display phase of each match to prevent the HUD module from crashing",
+	"Version": "0.0.2",
+	"LoadPriority": 4,
+	"Scripts": [
+        {
+			"Path": "AutoEjection.nut",
+			"RunOn": "CLIENT && MP",
+			"ClientCallback": {
+				"Before": "AutomaticEjection"
+			}
+		}
+	]
+}
